@@ -1,0 +1,178 @@
+html
+  box-sizing: border-box
+  font-size: 62.5%
+
+*
+  box-sizing: inherit
+
+  &::before, &::after
+    box-sizing: inherit
+
+.row-flex
+  margin: 40px auto
+  display: flex
+  flex-wrap: wrap
+
+.left-panel
+  max-width: 75%
+  flex: 75%
+
+.right-panel
+  max-width: 25%
+  flex: 25%
+
+.column
+  float: left
+  width: 33.33%
+  padding: 5px
+
+.row:after
+  content: ""
+  display: table
+  clear: both
+
+@media screen and (max-width: 576px)
+  .column
+    width: 100%
+    float: none
+
+  .row-flex
+    flex-direction: row
+
+  .left-panel
+    max-width: 100%
+    flex: 100%
+
+  .right-panel
+    flex: 100%
+    max-width: 100%
+
+.prod-container
+  border: 2px solid #EAE8EA
+  position: relative
+
+.prod-body
+  text-align: center
+
+.prod-container img
+  max-width: 100%
+  padding: 10px
+  max-height: 250px
+  width: auto
+
+.prod-footer
+  padding: 10px
+  display: flex
+  flex-wrap: wrap
+  width: 100%
+  background: #EEEFF2
+
+  .left-item
+    width: 50%
+    color: #8C8A8C
+
+  .right-item
+    width: 50%
+    text-align: right
+
+  button
+    color: #30C0FF
+    background: #FFF
+    border: 1px solid #30C0FF
+    padding: 5px 10px
+    border-radius: 3px
+
+.off-lable
+  position: absolute
+  padding: 5px 10px
+  color: #FFF
+  top: 10px
+  background: #45D550
+
+.strike-price
+  font-size: 14px
+  text-decoration: line-through
+  text-decoration: #FF0000 double line-through
+
+.heading
+  color: #7A7977
+
+.off-price
+  font-weight: 800
+  font-size: 14px
+  color: #454545
+
+.tbl-cart
+  width: 100%
+  border-top: 1px solid #ccc
+  border-bottom: 1px solid #ccc
+
+  img
+    float: left
+
+.cartitem-lable
+  background: #45D550
+  padding: 5px 1px
+  color: white
+
+.pop-message
+  background: #45D550
+  padding: 5px 20px
+  color: white
+  left: 46%
+  top: 20px
+  font-size: 16px
+  border-radius: 3px
+  position: absolute
+
+.tbl-cart
+  thead
+    text-align: left
+
+    th
+      padding: 10px
+
+  .price
+    text-align: right
+
+.totl-cart
+  .price
+    text-align: right
+
+  width: 100%
+  border: 1px solid #ccc
+  margin-top: 20px
+  color: #414141
+  vertical-align: middle
+
+  tfoot
+    background-color: #EFEFEF
+
+    td
+      padding: 10px 03px
+      border: 0px solid
+
+.input-group
+  display: flex
+
+.input-group-btn
+  display: flex
+  -webkit-box-align: center
+  -ms-flex-align: center
+  align-items: center
+  padding: .375rem .75rem
+  margin-bottom: 0
+  font-size: 1rem
+  font-weight: 400
+  line-height: 1.5
+  color: #495057
+  text-align: center
+  white-space: nowrap
+  background-color: #e9ecef
+  border: 1px solid #ced4da
+  border-radius: .25rem
+
+  + input
+    flex: 1 1 auto
+    width: 10px
+    text-align: center

@@ -5,9 +5,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-    <title>Webpack Boilerplate</title>
+    <title>Cart App</title>
   </head>
   <body>
-    <h1>Webpack boilerplate</h1>
+    <div class="pop-message" style="display: none;">Item added to cart</div> 
+    <div class="additem row">
+      <hr> 
+        <h1 class="heading">All Items</h1>
+    </div>
+    <hr>
+  
+    <div class="row-flex">
+      <div class="left-panel">
+        <div id="prod-box" class="row">
+        </div>
+      </div>
+      <div class="right-panel">
+        <table class="tbl-cart">  
+          <thead>
+                <tr>
+                    <th width="40%">Item</th>
+                    <th width="30%">Qty</th>
+                    <th width="30%" align="right">Price</th>    
+                </tr>
+            </thead>
+          <tbody>
+             
+            
+          </tbody>
+      </table>
+      <table class="totl-cart">
+        <tr>
+          <tr>
+            <td colspan="2">Total</td>
+          </tr>
+          <tr>
+            <td>Items(4)</td>
+            <td class="price">0$</td>
+          </tr>
+          <tr>
+            <td>Discount</td>
+            <td class="price">0$</td>
+          </tr>
+          <tfoot>
+            <tr>
+              <td>Grand Total</td>
+              <td class="price">0$</td>
+            </tr>
+        </tfoot>
+        </tr>
+      </table>
+      </div>
+    </div>
   </body>
 </html>
