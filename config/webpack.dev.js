@@ -5,9 +5,9 @@ const ROOT_DIRECTORY = process.cwd();
 
 module.exports = {
   mode: 'development',
-  entry: [
-    path.resolve(ROOT_DIRECTORY, 'src/index.js'),
-  }\,
+  entry: {
+    main: path.resolve(ROOT_DIRECTORY, 'src/index.js'),
+  },
   output: {
     path: path.resolve(ROOT_DIRECTORY, 'build'),
     filename: '[name].bundle.js',
