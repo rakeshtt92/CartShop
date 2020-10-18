@@ -128,7 +128,17 @@ html {
   color : #454545;
 }
 
+.tbl-cart thead tr th{
+  border-collapse: collapse;
+  border-top : 1px solid #ccc;
+  border-bottom : 1px solid #ccc;
+}
+
 .tbl-cart {
+  width : 100%;
+  border-bottom : 1px solid #ccc;
+}
+.tbl-cart-hr{
   width : 100%;
   border-top : 1px solid #ccc;
   border-bottom : 1px solid #ccc;

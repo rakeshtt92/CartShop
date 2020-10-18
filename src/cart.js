@@ -25,9 +25,9 @@ export const cart = () => ({
         let grandTotal = sumTotal - discount;
         grandTotal = grandTotal < 0 ? 0 : grandTotal;
         this.details = {
-            total : sumTotal,
-            discount : discount,
-            grandTotal : grandTotal
+            total : Math.round(sumTotal,2),
+            discount : Math.round(discount,2),
+            grandTotal : Math.round(grandTotal,2)
         }
         
         localStorage.setItem("cart", JSON.stringify({ details : this.details, items : this.items}));
