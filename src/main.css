@@ -128,7 +128,7 @@ html {
   color : #454545;
 }
 
-.tbl-cart thead tr th{
+.tbl-cart thead tr td{
   border-collapse: collapse;
   border-top : 1px solid #ccc;
   border-bottom : 1px solid #ccc;
@@ -153,7 +153,7 @@ html {
   padding : 5px 1px;
   color: white;
 }
-
+/* 
 .pop-message {
   background:#45D550;
   padding : 5px 20px;
@@ -163,6 +163,16 @@ html {
   font-size: 16px;
   border-radius: 3px;
   position: absolute;
+} */
+.pop-message {
+  padding: 5px 20px;
+  background:#45D550;
+  left: 46%;
+  top: 20px;
+  font-size: 16px;
+  border-radius: 3px;
+  z-index: 132323;
+  position: fixed;
 }
 
 .tbl-cart thead {

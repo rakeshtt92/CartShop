@@ -64,7 +64,7 @@ export const cart = () => ({
                 '<td>'+
                 '<div class="input-group">'+
                     '<button data-pid="'+ products[item].name +'" data-value="0" class="addtocart input-group-btn">-</button>'+
-                    '<input type="text" name="" value="'+  items[item] +'" />'+
+                    '<input readonly type="text" name="" value="'+  items[item] +'" />'+
                     '<button data-pid="'+  products[item].name +'" data-value="1" class="addtocart input-group-btn">+</button>'+
                 '</div>'+
                 '</td>'+
