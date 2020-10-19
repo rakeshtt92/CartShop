@@ -153,17 +153,7 @@ html {
   padding : 5px 1px;
   color: white;
 }
-/* 
-.pop-message {
-  background:#45D550;
-  padding : 5px 20px;
-  color: white;
-  left : 46%;
-  top : 20px;
-  font-size: 16px;
-  border-radius: 3px;
-  position: absolute;
-} */
+
 .pop-message {
   padding: 5px 20px;
   background:#45D550;
@@ -172,7 +162,7 @@ html {
   font-size: 16px;
   border-radius: 3px;
   z-index: 132323;
-  position: fixed;
+  position: absolute;
 }
 
 .tbl-cart thead {
