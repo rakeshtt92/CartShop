@@ -137,6 +137,7 @@ html {
 .tbl-cart {
   width : 100%;
   border-bottom : 1px solid #ccc;
+  border-top: 1px solid #ccc;
 }
 .tbl-cart-hr{
   width : 100%;
@@ -167,10 +168,13 @@ html {
 
 .tbl-cart thead {
  text-align: left;
+ font-size: 12px;
 }
 
 .tbl-cart thead th{
   padding : 10px;
+  border-bottom: 1px solid #ccc;
+  border-collapse: collapse;
  }
 
 .tbl-cart .price {
@@ -188,6 +192,7 @@ html {
   margin-top : 20px;
   color :#414141;
   vertical-align: middle;
+  font-size: 12px;
 }
 
 .totl-cart tfoot {
